@@ -30,7 +30,11 @@ body {
     height: 38%;
 }
 
-
+.logo:hover{
+    transform: scale(1.05);
+    transition: 400ms;
+    filter: brightness(115%);
+}
 
 /* aside */
 
@@ -71,7 +75,7 @@ ul li {
 .menu {
     border-style: solid;
     background-image: url(/Pages/Assets/sakura.png);
-          
+    animation: menufondo 3s infinite alternate;        
 }
 
 @keyframes menufondo {
