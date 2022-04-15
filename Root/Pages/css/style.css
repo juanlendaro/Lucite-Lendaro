@@ -1,0 +1,131 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Pages/Assets/pink_rice.png");
+   
+}
+
+.header {
+    grid-area: header;
+    padding: 10em;
+    background-image: linear-gradient(to right, hsl(0, 100%, 50%, 0), hsl(0, 0%, 0%, 1)), url(/Pages/Assets/header.jpg);
+    background-repeat: no-repeat;
+    outline: 2px solid black;
+    background-position: bottom;
+    background-size: cover;
+    }
+
+/* nav */
+.nav {
+    background-color: rosybrown;
+    grid-area: nav;
+
+}
+
+.logo {
+    height: 38%;
+}
+
+
+
+/* aside */
+
+.aside {
+    grid-area: aside;
+    background-color: rosybrown;
+}
+
+/* Main Index */
+
+.main {
+    grid-area: main;
+}
+
+.introducción {
+    color: rgb(156, 6, 156);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    text-align: center
+}
+
+nav ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 2rem;
+    background-image: url(/Pages/Assets/favicon2.png);
+    background-position: 0 0;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    border-style: solid;
+    background-image: url(/Pages/Assets/sakura.png);
+          
+}
+
+@keyframes menufondo {
+   0% {background-position: left;
+    } 
+    100% { background-position: right;}
+}
+
+.footer {
+    margin: 15px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    background-image: url(/Pages/Assets/sakura.png);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Area */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-areas:
+        "nav header aside"
+        "nav main aside"
+        "nav footer aside";
+}
+
+/*Patrones*/
+
+#patrones-explicación {
+    color: rgb(226, 77, 7);
+    margin: 30px
+}
+
+/* Contacto */
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer"
+    }
+}
