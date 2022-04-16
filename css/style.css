@@ -78,6 +78,8 @@ ul li {
     animation: menufondo 3s infinite alternate;        
 }
 
+
+
 @keyframes menufondo {
    0% {background-position: left;
     } 
@@ -116,11 +118,6 @@ ul li {
 
 /* Contacto */
 
-.form {
-    display: flex;
-    flex-direction: column;
-
-}
 
 @media only screen and (max-width: 480px) {
     .contenedor {
