@@ -1,132 +1,126 @@
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("../assets/pink_rice.png");
-   
-}
-
+@charset "UTF-8";
 .header {
-    grid-area: header;
-    padding: 10em;
-    background-image: linear-gradient(to right, hsl(0, 100%, 50%, 0), hsl(0, 0%, 0%, 1)), url(../assets/header.jpg);
-    background-repeat: no-repeat;
-    outline: 2px solid black;
-    background-position: bottom;
-    background-size: cover;
-    }
+  grid-area: header;
+  padding: 10em;
+  background-image: linear-gradient(to right, hsla(0deg, 100%, 50%, 0), hsl(0deg, 0%, 0%)), url(../assets/header.jpg);
+  background-repeat: no-repeat;
+  outline: 2px solid black;
+  background-position: bottom;
+  background-size: cover;
+}
 
 /* nav */
 .nav {
-    background-color: rosybrown;
-    grid-area: nav;
-
+  display: column;
+  background-color: rosybrown;
+  grid-area: nav;
+  position: relative;
 }
 
 .logo {
-    height: 38%;
+  height: 38%;
 }
 
-.logo:hover{
-    transform: scale(1.05);
-    transition: 400ms;
-    filter: brightness(115%);
+.logo:hover {
+  transform: scale(1.05);
+  transition: 400ms;
+  filter: brightness(115%);
 }
 
 /* aside */
-
 .aside {
-    grid-area: aside;
-    background-color: rosybrown;
-}
-
-/* Main Index */
-
-.main {
-    grid-area: main;
-}
-
-.introducción {
-    color: rgb(156, 6, 156);
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    text-align: center
+  grid-area: aside;
+  background-color: rosybrown;
 }
 
 nav ul {
-    padding-left: 2rem;
-    list-style-type: none;
+  display: column;
+  padding-left: 2rem;
+  list-style-type: none;
 }
 
 ul li {
-    padding-left: 2rem;
-    background-image: url(../assets/favicon2.png);
-    background-position: 0 0;
-    background-size: 1.2rem 1.2rem;
-    background-repeat: no-repeat;
+  padding-left: 2rem;
+  display: column;
+  background-image: url(../assets/favicon2.png);
+  background-position: 0 0;
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
 }
 
 .menu {
-    border-style: solid;
-    background-image: url(../assets/sakura.png);
-    animation: menufondo 3s infinite alternate;        
+  border-style: solid;
+  display: column;
+  background-image: url(../assets/sakura.png);
+  animation: menufondo 3s infinite alternate;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
 }
-
-
 
 @keyframes menufondo {
-   0% {background-position: left;
-    } 
-    100% { background-position: right;}
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.footer {
+  margin: 15px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  background-image: url(/..assets/sakura.png);
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer {
-    margin: 15px;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
-    background-image: url(/..assets/sakura.png);
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.introducción {
+  color: rgb(156, 6, 156);
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+#patrones-explicación {
+  color: rgb(226, 77, 7);
+  margin: 30px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/pink_rice.png");
+}
+
+.main {
+  grid-area: main;
 }
 
 /* Grid Area */
-
 .contenedor {
-    display: grid;
-    grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-areas:
-        "nav header aside"
-        "nav main aside"
-        "nav footer aside";
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  grid-template-areas: "nav header aside" "nav main aside" "nav footer aside";
 }
-
-/*Patrones*/
-
-#patrones-explicación {
-    color: rgb(226, 77, 7);
-    margin: 30px
-}
-
-/* Contacto */
-
 
 @media only screen and (max-width: 480px) {
-    .contenedor {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "aside"
-        "footer"
-    }
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

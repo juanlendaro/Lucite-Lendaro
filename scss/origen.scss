@@ -1,0 +1,50 @@
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";
+@import "./home";
+@import "./patrones";
+@import "./contacto";
+@import "./amigurumis";
+@import "./indumentaria";
+
+//  ajustes generales
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/pink_rice.png");
+}
+
+.main {
+  grid-area: main;
+}
+
+/* Grid Area */
+
+.contenedor {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  grid-template-areas:
+    "nav header aside"
+    "nav main aside"
+    "nav footer aside";
+}
+
+//media queries
+
+@media only screen and (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+}

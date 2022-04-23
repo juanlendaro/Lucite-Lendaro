@@ -1,0 +1,11 @@
+.footer {
+  margin: 15px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  background-image: url(/..assets/sakura.png);
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

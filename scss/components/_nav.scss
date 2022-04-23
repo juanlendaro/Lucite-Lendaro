@@ -1,0 +1,59 @@
+/* nav */
+.nav {
+  display: column;
+  background-color: rosybrown;
+  grid-area: nav;
+  position: relative;
+}
+
+.logo {
+  height: 38%;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: 400ms;
+  filter: brightness(115%);
+}
+
+/* aside */
+
+.aside {
+  grid-area: aside;
+  background-color: rosybrown;
+}
+
+nav ul {
+  display: column;
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  display: column;
+  background-image: url(../assets/favicon2.png);
+  background-position: 0 0;
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  border-style: solid;
+  display: column;
+  background-image: url(../assets/sakura.png);
+  animation: menufondo 3s infinite alternate;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+}
+
+@keyframes menufondo {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}

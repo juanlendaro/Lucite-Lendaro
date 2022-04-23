@@ -1,0 +1,14 @@
+.header {
+  grid-area: header;
+  padding: 10em;
+  background-image: linear-gradient(
+      to right,
+      hsl(0, 100%, 50%, 0),
+      hsl(0, 0%, 0%, 1)
+    ),
+    url(../assets/header.jpg);
+  background-repeat: no-repeat;
+  outline: 2px solid black;
+  background-position: bottom;
+  background-size: cover;
+}
