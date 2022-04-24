@@ -1,14 +1,14 @@
 @import "./components/header";
 @import "./components/nav";
 @import "./components/footer";
-@import "./home";
-@import "./patrones";
-@import "./contacto";
-@import "./amigurumis";
-@import "./indumentaria";
+@import "./components/home";
+@import "./components/patrones";
+@import "./components/contacto";
+@import "./components/amigurumis";
+@import "./components/indumentaria";
+@import "./components/aside";
 
 //  ajustes generales
-
 * {
   padding: 0%;
   margin: 0%;
@@ -17,6 +17,9 @@
 
 body {
   background-image: url("../assets/pink_rice.png");
+  //   display: flex;
+  //   flex-direction: column;
+  //   min-height: 100vh;
 }
 
 .main {
@@ -41,7 +44,6 @@ body {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "header"
       "nav"
       "main"
       "aside"

@@ -1,6 +1,9 @@
 .header {
   grid-area: header;
-  padding: 10em;
+  box-sizing: border-box;
+  padding: 6em;
+  margin-top: 0.5em;
+  overflow: hidden;
   background-image: linear-gradient(
       to right,
       hsl(0, 100%, 50%, 0),
@@ -8,7 +11,8 @@
     ),
     url(../assets/header.jpg);
   background-repeat: no-repeat;
-  outline: 2px solid black;
+  outline: 0.5rem outset rosybrown;
   background-position: bottom;
   background-size: cover;
+  box-shadow: 10px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
