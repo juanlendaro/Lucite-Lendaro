@@ -5,9 +5,10 @@
   box-sizing: border-box;
   overflow: hidden;
   height: 35vh;
-  background-image: linear-gradient(to right, hsla(0deg, 30%, 10%, 0), hsla(0deg, 0%, 0%, 0.5)), url(/assets/lucites2.jpg);
+  background-image: linear-gradient(to right, hsla(0deg, 30%, 10%, 0), hsla(0deg, 0%, 0%, 0.8)), url(../assets/lucites2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-y: -5em;
   background-size: contain;
   box-shadow: 5px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
