@@ -1,5 +1,5 @@
 .nav {
-  display: column;
+  display: flex;
   background-color: rosybrown;
   grid-area: nav;
   position: relative;
@@ -7,6 +7,7 @@
 
   .logo {
     height: 35vh;
+    margin-left: 20%;
   }
   .logo:hover {
     transform: scale(1.05);

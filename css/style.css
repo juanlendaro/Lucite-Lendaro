@@ -3,18 +3,23 @@
 .header {
   grid-area: header;
   box-sizing: border-box;
-  overflow: hidden;
   height: 35vh;
-  background-image: linear-gradient(to right, hsla(0deg, 30%, 10%, 0), hsla(0deg, 0%, 0%, 0.8)), url(../assets/lucites2.jpg);
+  background-image: linear-gradient(to right, hsla(0deg, 30%, 50%, 0), hsla(0deg, 0%, 0%, 0.9)), url(../assets/lucites2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-y: -5em;
+  margin-bottom: -50rem;
   background-size: contain;
   box-shadow: 5px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
+@media only screen and (max-width: 480px) {
+  .header {
+    background-size: cover;
+  }
+}
 .nav {
-  display: column;
+  display: flex;
   background-color: rosybrown;
   grid-area: nav;
   position: relative;
@@ -22,6 +27,7 @@
 }
 .nav .logo {
   height: 35vh;
+  margin-left: 20%;
 }
 .nav .logo:hover {
   transform: scale(1.05);
@@ -156,6 +162,7 @@ p {
 
 .mainindex {
   grid-area: main;
+  margin-top: -15vh;
 }
 
 .carousel {
@@ -201,15 +208,15 @@ body {
 /* Grid Area */
 .contenedor {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 0.5fr 4fr 0.5fr;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: "nav header aside" "nav main aside" "nav footer aside";
 }
 
 @media only screen and (max-width: 480px) {
   .contenedor {
     grid-template-columns: 1fr;
-    grid-template-areas: "nav" "main" "aside" "footer";
+    grid-template-areas: "nav header" "nav main" "aside" "footer";
   }
 }
 
