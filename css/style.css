@@ -34,7 +34,8 @@
   transition: 400ms;
   filter: brightness(115%);
 }
-.nav .menu {
+
+.menu {
   border-style: solid;
   display: column;
   background-image: url(../assets/sakura.png);
@@ -44,17 +45,68 @@
   margin: 1rem;
   margin-bottom: 140rem;
 }
-.nav ul {
+
+ul {
   padding-left: 2rem;
   list-style-type: none;
 }
-.nav ul li {
+ul li {
   padding-left: 2rem;
   display: column;
   background-image: url(../assets/favicon2.png);
   background-position: 0 0;
-  background-size: 1.2rem 1.2rem;
+  background-size: 2rem;
   background-repeat: no-repeat;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li .css-button-arrow--rose, ul li .css-button-arrow--rose--5, ul li .css-button-arrow--rose--4, ul li .css-button-arrow--rose--3, ul li .css-button-arrow--rose--2 {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6392;
+}
+ul li .css-button-arrow--rose:hover, ul li .css-button-arrow--rose--5:hover, ul li .css-button-arrow--rose--4:hover, ul li .css-button-arrow--rose--3:hover, ul li .css-button-arrow--rose--2:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+ul li .css-button-arrow--rose:hover:after, ul li .css-button-arrow--rose--5:hover:after, ul li .css-button-arrow--rose--4:hover:after, ul li .css-button-arrow--rose--3:hover:after, ul li .css-button-arrow--rose--2:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+ul li .css-button-arrow--rose:after, ul li .css-button-arrow--rose--5:after, ul li .css-button-arrow--rose--4:after, ul li .css-button-arrow--rose--3:after, ul li .css-button-arrow--rose--2:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+ul li .css-button-arrow--rose--2:after {
+  content: "☃";
+}
+ul li .css-button-arrow--rose--3:after {
+  content: "❤";
+}
+ul li .css-button-arrow--rose--4:after {
+  content: "✿";
+}
+ul li .css-button-arrow--rose--5:after {
+  content: "✍";
 }
 
 @keyframes menufondo {
@@ -150,6 +202,10 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
+h1 {
+  font-size: 5rem;
+}
+
 .introducción {
   color: rgb(156, 6, 156);
   font-size: 18px;
@@ -162,7 +218,6 @@ p {
 
 .mainindex {
   grid-area: main;
-  margin-top: -15vh;
 }
 
 .carousel {
@@ -182,6 +237,22 @@ p {
   object-fit: cover;
   object-position: center;
   height: 70vh;
+}
+
+.mainmixin {
+  height: 200px;
+  width: 200px;
+  background-image: url(https://images.unsplash.com/photo-1632649027900-389e810204e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainmixin2 {
+  height: 200px;
+  width: 200px;
+  background-image: url(https://images.unsplash.com/photo-1577124999548-1db893a4b7f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #patrones-explicación {

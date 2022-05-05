@@ -14,26 +14,90 @@
     transition: 400ms;
     filter: brightness(115%);
   }
-  .menu {
-    border-style: solid;
-    display: column;
-    background-image: url(../assets/sakura.png);
-    animation: menufondo 3s infinite alternate;
-    position: relative;
-    width: 100%;
-    margin: 1rem;
-    margin-bottom: 140rem;
-  }
-  ul {
+}
+
+.menu {
+  border-style: solid;
+  display: column;
+  background-image: url(../assets/sakura.png);
+  animation: menufondo 3s infinite alternate;
+  position: relative;
+  width: 100%;
+  margin: 1rem;
+  margin-bottom: 140rem;
+}
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+  li {
     padding-left: 2rem;
-    list-style-type: none;
-    li {
-      padding-left: 2rem;
-      display: column;
-      background-image: url(../assets/favicon2.png);
-      background-position: 0 0;
-      background-size: 1.2rem 1.2rem;
-      background-repeat: no-repeat;
+    display: column;
+    background-image: url(../assets/favicon2.png);
+    background-position: 0 0;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    a {
+      text-decoration: none;
+    }
+
+    .css-button-arrow--rose {
+      min-width: 130px;
+      height: 40px;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      overflow: hidden;
+      border-radius: 5px;
+      border: none;
+      background-color: #ff6392;
+    }
+    .css-button-arrow--rose:hover {
+      border-radius: 5px;
+      padding-right: 24px;
+      padding-left: 8px;
+    }
+    .css-button-arrow--rose:hover:after {
+      opacity: 1;
+      right: 10px;
+    }
+    .css-button-arrow--rose:after {
+      content: "\00BB";
+      position: absolute;
+      opacity: 0;
+      font-size: 20px;
+      line-height: 40px;
+      top: 0;
+      right: -20px;
+      transition: 0.4s;
+    }
+    .css-button-arrow--rose--2 {
+      @extend .css-button-arrow--rose;
+    }
+    .css-button-arrow--rose--2:after {
+      content: "\2603";
+    }
+    .css-button-arrow--rose--3 {
+      @extend .css-button-arrow--rose;
+    }
+    .css-button-arrow--rose--3:after {
+      content: "\2764";
+    }
+    .css-button-arrow--rose--4 {
+      @extend .css-button-arrow--rose;
+    }
+    .css-button-arrow--rose--4:after {
+      content: "\273F";
+    }
+    .css-button-arrow--rose--5 {
+      @extend .css-button-arrow--rose;
+    }
+    .css-button-arrow--rose--5:after {
+      content: "\270D";
     }
   }
 }
