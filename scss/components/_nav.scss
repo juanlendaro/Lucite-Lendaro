@@ -24,21 +24,23 @@
   animation: menufondo 3s infinite alternate;
   position: relative;
   width: 100%;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 140rem;
 }
 
 ul {
   padding-left: 2rem;
   list-style-type: none;
+  text-align: center;
 
   .lista-menu {
-    padding-left: 2rem;
     display: column;
     background-image: url(../assets/favicon2.png);
     background-position: 0 0;
-    background-size: 2rem;
+    background-size: 2.5rem;
     background-repeat: no-repeat;
+
+
 
     a {
       color: #fcf5e5;
@@ -48,8 +50,8 @@ ul {
 
   .css-button-arrow--rose {
     text-decoration: none;
-    min-width: 130px;
-    height: 40px;
+    min-width: 12rem;
+    height: 2.5rem;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
@@ -62,6 +64,7 @@ ul {
     border-radius: 5px;
     border: none;
     background-color: #ff6392;
+
   }
 
   .css-button-arrow--rose:hover {

@@ -45,20 +45,20 @@
   animation: menufondo 3s infinite alternate;
   position: relative;
   width: 100%;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 140rem;
 }
 
 ul {
   padding-left: 2rem;
   list-style-type: none;
+  text-align: center;
 }
 ul .lista-menu {
-  padding-left: 2rem;
   display: column;
   background-image: url(../assets/favicon2.png);
   background-position: 0 0;
-  background-size: 2rem;
+  background-size: 2.5rem;
   background-repeat: no-repeat;
 }
 ul .lista-menu a {
@@ -67,8 +67,8 @@ ul .lista-menu a {
 }
 ul .css-button-arrow--rose, ul .css-button-arrow--rose--5, ul .css-button-arrow--rose--4, ul .css-button-arrow--rose--3, ul .css-button-arrow--rose--2 {
   text-decoration: none;
-  min-width: 130px;
-  height: 40px;
+  min-width: 12rem;
+  height: 2.5rem;
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
