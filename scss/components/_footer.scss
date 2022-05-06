@@ -12,12 +12,12 @@ section {
 
 section .section-title {
   text-align: center;
-  color: rosybrown;
+  @include primario;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 #footer {
-  background: rosybrown !important;
+  @include primario;
 }
 #footer h5 {
   padding-left: 10px;

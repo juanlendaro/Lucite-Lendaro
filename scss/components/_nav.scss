@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  background-color: rosybrown;
+  @include primario;
   grid-area: nav;
   position: relative;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.7);
@@ -9,6 +9,7 @@
     height: 35vh;
     margin-left: 20%;
   }
+
   .logo:hover {
     transform: scale(1.05);
     transition: 400ms;
@@ -26,79 +27,95 @@
   margin: 1rem;
   margin-bottom: 140rem;
 }
+
 ul {
   padding-left: 2rem;
   list-style-type: none;
-  li {
+
+  .lista-menu {
     padding-left: 2rem;
     display: column;
     background-image: url(../assets/favicon2.png);
     background-position: 0 0;
     background-size: 2rem;
     background-repeat: no-repeat;
+
     a {
+      color: #fcf5e5;
       text-decoration: none;
     }
+  }
 
-    .css-button-arrow--rose {
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      border-radius: 5px;
-      border: none;
-      background-color: #ff6392;
-    }
-    .css-button-arrow--rose:hover {
-      border-radius: 5px;
-      padding-right: 24px;
-      padding-left: 8px;
-    }
-    .css-button-arrow--rose:hover:after {
-      opacity: 1;
-      right: 10px;
-    }
-    .css-button-arrow--rose:after {
-      content: "\00BB";
-      position: absolute;
-      opacity: 0;
-      font-size: 20px;
-      line-height: 40px;
-      top: 0;
-      right: -20px;
-      transition: 0.4s;
-    }
-    .css-button-arrow--rose--2 {
-      @extend .css-button-arrow--rose;
-    }
-    .css-button-arrow--rose--2:after {
-      content: "\2603";
-    }
-    .css-button-arrow--rose--3 {
-      @extend .css-button-arrow--rose;
-    }
-    .css-button-arrow--rose--3:after {
-      content: "\2764";
-    }
-    .css-button-arrow--rose--4 {
-      @extend .css-button-arrow--rose;
-    }
-    .css-button-arrow--rose--4:after {
-      content: "\273F";
-    }
-    .css-button-arrow--rose--5 {
-      @extend .css-button-arrow--rose;
-    }
-    .css-button-arrow--rose--5:after {
-      content: "\270D";
-    }
+  .css-button-arrow--rose {
+    text-decoration: none;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6392;
+  }
+
+  .css-button-arrow--rose:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+  }
+
+  .css-button-arrow--rose:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  .css-button-arrow--rose:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+
+  .css-button-arrow--rose--2 {
+    @extend .css-button-arrow--rose;
+  }
+
+  .css-button-arrow--rose--2:after {
+    content: "\2603";
+  }
+
+  .css-button-arrow--rose--3 {
+    @extend .css-button-arrow--rose;
+  }
+
+  .css-button-arrow--rose--3:after {
+    content: "\2764";
+  }
+
+  .css-button-arrow--rose--4 {
+    @extend .css-button-arrow--rose;
+  }
+
+  .css-button-arrow--rose--4:after {
+    content: "\273F";
+  }
+
+  .css-button-arrow--rose--5 {
+    @extend .css-button-arrow--rose;
+  }
+
+  .css-button-arrow--rose--5:after {
+    content: "\270D";
   }
 }
 
@@ -106,6 +123,7 @@ ul {
   0% {
     background-position: left;
   }
+
   100% {
     background-position: right;
   }
