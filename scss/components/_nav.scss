@@ -1,13 +1,18 @@
 .nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   @include primario;
   grid-area: nav;
   position: relative;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.7);
+  
 
   .logo {
     height: 35vh;
-    margin-left: 20%;
+    margin-top: 0.2em;
+    
+  
   }
 
   .logo:hover {
@@ -19,22 +24,24 @@
 
 .menu {
   border-style: solid;
+  margin-bottom: 100%;
+  border-color: rosybrown;
   display: column;
   background-image: url(../assets/sakura.png);
   animation: menufondo 3s infinite alternate;
-  position: relative;
-  width: 100%;
-  margin: 2rem;
-  margin-bottom: 140rem;
+  width: 80%;
+  margin-top: 2em;
+  
+ 
 }
 
 ul {
-  padding-left: 2rem;
+  
   list-style-type: none;
   text-align: center;
 
   .lista-menu {
-    display: column;
+    
     background-image: url(../assets/favicon2.png);
     background-position: 0 0;
     background-size: 2.5rem;
@@ -43,17 +50,18 @@ ul {
 
 
     a {
-      color: #fcf5e5;
+       color: #fcf5e5;
       text-decoration: none;
     }
   }
 
   .css-button-arrow--rose {
+    
     text-decoration: none;
-    min-width: 12rem;
+    min-width: 14rem;
     height: 2.5rem;
     color: #fff;
-    padding: 5px 10px;
+    padding: 0.3125em 0.625em;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -61,31 +69,31 @@ ul {
     display: inline-block;
     outline: none;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     border: none;
-    background-color: #ff6392;
+    background-color: #ee8383;
 
   }
 
   .css-button-arrow--rose:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left: 8px;
+    border-radius: 0.313em;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
   }
 
   .css-button-arrow--rose:hover:after {
     opacity: 1;
-    right: 10px;
+    right: 0.625rem;
   }
 
   .css-button-arrow--rose:after {
     content: "\00BB";
     position: absolute;
     opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 1.25em;
+    line-height: 1.8em;
     top: 0;
-    right: -20px;
+    right: -1.25em;
     transition: 0.4s;
   }
 
