@@ -24,13 +24,13 @@
 
 .menu {
   border-style: solid;
-  margin-bottom: 100%;
   border-color: rosybrown;
   display: column;
   background-image: url(../assets/sakura.png);
   animation: menufondo 3s infinite alternate;
   width: 80%;
   margin-top: 2em;
+  
   
  
 }
@@ -40,18 +40,21 @@ ul {
   list-style-type: none;
   text-align: center;
 
+    
   .lista-menu {
     
     background-image: url(../assets/favicon2.png);
     background-position: 0 0;
     background-size: 2.5rem;
     background-repeat: no-repeat;
+    
 
 
 
     a {
        color: #fcf5e5;
       text-decoration: none;
+            
     }
   }
 
@@ -71,7 +74,7 @@ ul {
     overflow: hidden;
     border-radius: 0.3125em;
     border: none;
-    background-color: #ee8383;
+    background-color: $boton;
 
   }
 

@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #ee8383 !important;
+  border-color: #ee8383 !important;
+}
+
 .header {
   grid-area: header;
   box-sizing: border-box;
@@ -41,7 +46,6 @@
 
 .menu {
   border-style: solid;
-  margin-bottom: 100%;
   border-color: rosybrown;
   display: column;
   background-image: url(../assets/sakura.png);
