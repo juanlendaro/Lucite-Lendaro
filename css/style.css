@@ -314,10 +314,11 @@ p {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .contenedor {
-  padding: 0px;
+  padding: 0;
 }
 
 body {
