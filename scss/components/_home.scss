@@ -48,21 +48,3 @@ p {
     }
   }
 }
-@mixin tamanio($alto, $ancho) {
-  height: $alto;
-  width: $ancho;
-}
-
-.mainmixin {
-  @include tamanio(200px, 200px);
-  background-image: url(https://images.unsplash.com/photo-1632649027900-389e810204e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.mainmixin2 {
-  @include tamanio(200px, 200px);
-  background-image: url(https://images.unsplash.com/photo-1577124999548-1db893a4b7f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
-  background-position: center;
-  background-repeat: no-repeat;
-}

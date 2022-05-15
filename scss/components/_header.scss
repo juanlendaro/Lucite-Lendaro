@@ -1,21 +1,42 @@
 .header {
   grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  height: 35vh;
+  height: 18vh;
+  width: 48em;
+  margin: auto;
+  
   background-image: linear-gradient(to right,
-      hsl(0, 30%, 50%, 0),
-      hsl(0, 0%, 0%, 0.9)),
+  rgba(0, 0, 0, 0.1),  
+  rgba(0, 0, 0, 0.8),
+  rgba(0, 0, 0, 0.1)),
     url(../assets/lucites2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-y: -5em;
+  object-position: center;
+  background-size: 90% 60%;
+  border-radius: 3em;
+  margin-top: 0.6em;
+  filter: brightness(190%);
+    
   
-  background-size: contain;
-  box-shadow: 5px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #fff;
+    text-shadow: rgb(0, 0, 0);
+       
+  }
+  
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1107px) {
   .header {
     background-size: cover;
   }
 }
+

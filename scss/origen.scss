@@ -18,13 +18,15 @@
 
 body {
   background-image: url("../assets/pink_rice.png");
+
+  
 }
 
 /* Grid Area */
 
 .contenedor {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     "nav header aside"

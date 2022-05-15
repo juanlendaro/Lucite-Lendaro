@@ -11,7 +11,7 @@ $boton: #ee8383;
 
 // Modificando bootstrap
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, {
-  background-color: #ee8383 !important;
-  border-color: #ee8383 !important;
+.btn-primary,.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: $boton !important;
+  border-color: $boton !important;
 }
