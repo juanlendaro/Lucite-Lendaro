@@ -316,6 +316,10 @@ p {
   box-sizing: border-box;
 }
 
+.contenedor {
+  padding: 0px;
+}
+
 body {
   background-image: url("../assets/pink_rice.png");
   width: 100%;
