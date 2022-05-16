@@ -254,11 +254,19 @@ section .section-title {
   height: 100vh;
   overflow: hidden;
 }
-.mainindex .carousel img {
+.mainindex .carousel .carousel-item .img-carousel {
   object-fit: cover;
   object-position: center;
   height: 70vh;
   overflow: hidden;
+}
+
+.introindex {
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  height: 15em;
+  text-align: center;
 }
 
 .video-main {

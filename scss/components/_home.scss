@@ -2,6 +2,8 @@
 
 .mainindex {
   grid-area: main;
+
+
   .carousel {
     margin: auto;
     width: 80%;
@@ -21,21 +23,34 @@
         height: 100vh;
         overflow: hidden;
       }
+      .img-carousel {
+        object-fit: cover;
+        object-position: center;
+        height: 70vh;
+        overflow: hidden;
+      }
 }
-
-
-    img {
-      object-fit: cover;
-      object-position: center;
-      height: 70vh;
-      overflow: hidden;
-    }
+   
   }
 }
+
+
+
+.introindex {
+  display: flex;
+  font-family:'Roboto Slab', serif;
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  height: 15em;
+  text-align: center;
+     
+}
+
 
 .video-main {
   margin: auto;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .carousel {
