@@ -1,9 +1,7 @@
 .nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
   @include primario;
   grid-area: nav;
   position: relative;
@@ -13,8 +11,8 @@
   
   .logo {
     height: 35vh;
-    margin-top: 0.2em;
-          
+   
+    
   }
 
   .logo:hover {
@@ -26,8 +24,8 @@
 
 #menunav {
   align-items: flex-start;
-  margin-top: 1em;
-  margin-left: 3.5em;      
+  margin-top: 4em;
+  justify-content: center;
  
 }
 
@@ -145,3 +143,15 @@
   }
 }
 
+
+@media only screen and (max-width: 780px) {
+  
+    .nav {
+      flex-wrap: nowrap;
+      
+      
+         
+    }
+
+  
+}
