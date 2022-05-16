@@ -11,16 +11,10 @@
   overflow: hidden;
   
   
-
-  
-  
-
   .logo {
     height: 35vh;
     margin-top: 0.2em;
-    
-    
-  
+          
   }
 
   .logo:hover {
@@ -33,28 +27,19 @@
 #menunav {
   align-items: flex-start;
   margin-top: 1em;
-  margin-left: 3.5em;
-  
-    
-
-    .menu {
-      border-style: solid;
-      border-color: rosybrown;
-      display: column;
-      background-image: url(../assets/sakura.png);
-      animation: menufondo 3s infinite alternate;
-      width: 85%;
-      
-             
+  margin-left: 3.5em;      
  
 }
-}
 
-ul {
+
+.menu {
+  border-style: solid;
+  border-color: rosybrown;
+  display: column;
+  background-image: url(../assets/sakura.png);
+  animation: menufondo 3s infinite alternate;
+  width: 22em;
   
-  list-style-type: none;
-  text-align: center;
-
     
   .lista-menu {
     
@@ -63,6 +48,7 @@ ul {
     background-size: 2.5rem;
     background-repeat: no-repeat;
     margin-left: 1em;
+    
     
 
 
@@ -158,3 +144,4 @@ ul {
     background-position: right;
   }
 }
+

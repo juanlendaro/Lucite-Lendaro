@@ -64,31 +64,27 @@
   margin-top: 1em;
   margin-left: 3.5em;
 }
-#menunav .menu {
+
+.menu {
   border-style: solid;
   border-color: rosybrown;
   display: column;
   background-image: url(../assets/sakura.png);
   animation: menufondo 3s infinite alternate;
-  width: 85%;
+  width: 22em;
 }
-
-ul {
-  list-style-type: none;
-  text-align: center;
-}
-ul .lista-menu {
+.menu .lista-menu {
   background-image: url(../assets/favicon2.png);
   background-position: 0 0;
   background-size: 2.5rem;
   background-repeat: no-repeat;
   margin-left: 1em;
 }
-ul .lista-menu a {
+.menu .lista-menu a {
   color: #fcf5e5;
   text-decoration: none;
 }
-ul .css-button-arrow--rose, ul .css-button-arrow--rose--5, ul .css-button-arrow--rose--4, ul .css-button-arrow--rose--3, ul .css-button-arrow--rose--2 {
+.menu .css-button-arrow--rose, .menu .css-button-arrow--rose--5, .menu .css-button-arrow--rose--4, .menu .css-button-arrow--rose--3, .menu .css-button-arrow--rose--2 {
   text-decoration: none;
   min-width: 14rem;
   height: 2.5rem;
@@ -105,16 +101,16 @@ ul .css-button-arrow--rose, ul .css-button-arrow--rose--5, ul .css-button-arrow-
   border: none;
   background-color: #ee8383;
 }
-ul .css-button-arrow--rose:hover, ul .css-button-arrow--rose--5:hover, ul .css-button-arrow--rose--4:hover, ul .css-button-arrow--rose--3:hover, ul .css-button-arrow--rose--2:hover {
+.menu .css-button-arrow--rose:hover, .menu .css-button-arrow--rose--5:hover, .menu .css-button-arrow--rose--4:hover, .menu .css-button-arrow--rose--3:hover, .menu .css-button-arrow--rose--2:hover {
   border-radius: 0.313em;
   padding-right: 1.5em;
   padding-left: 0.5em;
 }
-ul .css-button-arrow--rose:hover:after, ul .css-button-arrow--rose--5:hover:after, ul .css-button-arrow--rose--4:hover:after, ul .css-button-arrow--rose--3:hover:after, ul .css-button-arrow--rose--2:hover:after {
+.menu .css-button-arrow--rose:hover:after, .menu .css-button-arrow--rose--5:hover:after, .menu .css-button-arrow--rose--4:hover:after, .menu .css-button-arrow--rose--3:hover:after, .menu .css-button-arrow--rose--2:hover:after {
   opacity: 1;
   right: 0.625rem;
 }
-ul .css-button-arrow--rose:after, ul .css-button-arrow--rose--5:after, ul .css-button-arrow--rose--4:after, ul .css-button-arrow--rose--3:after, ul .css-button-arrow--rose--2:after {
+.menu .css-button-arrow--rose:after, .menu .css-button-arrow--rose--5:after, .menu .css-button-arrow--rose--4:after, .menu .css-button-arrow--rose--3:after, .menu .css-button-arrow--rose--2:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -124,16 +120,16 @@ ul .css-button-arrow--rose:after, ul .css-button-arrow--rose--5:after, ul .css-b
   right: -1.25em;
   transition: 0.4s;
 }
-ul .css-button-arrow--rose--2:after {
+.menu .css-button-arrow--rose--2:after {
   content: "☃";
 }
-ul .css-button-arrow--rose--3:after {
+.menu .css-button-arrow--rose--3:after {
   content: "❤";
 }
-ul .css-button-arrow--rose--4:after {
+.menu .css-button-arrow--rose--4:after {
   content: "✿";
 }
-ul .css-button-arrow--rose--5:after {
+.menu .css-button-arrow--rose--5:after {
   content: "✍";
 }
 
@@ -236,26 +232,17 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-h1 {
-  font-size: 5rem;
-}
-
-p {
-  text-align: center;
-}
-
 .mainindex {
   grid-area: main;
 }
-
-.carousel {
+.mainindex .carousel {
   margin: auto;
   width: 80%;
 }
-.carousel .carousel-item {
+.mainindex .carousel .carousel-item {
   overflow: hidden;
 }
-.carousel .carousel-item:before {
+.mainindex .carousel .carousel-item:before {
   content: "";
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
   display: block;
@@ -265,13 +252,22 @@ p {
   height: 100vh;
   overflow: hidden;
 }
-.carousel .carousel-item img {
+.mainindex .carousel img {
   object-fit: cover;
   object-position: center;
   height: 70vh;
   overflow: hidden;
 }
 
+.video-main {
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel {
+    width: 100%;
+  }
+}
 #patrones-explicación {
   color: rgb(226, 77, 7);
   margin: 30px;
@@ -321,17 +317,13 @@ p {
   box-sizing: border-box;
 }
 
-.contenedor {
-  padding: 0;
-}
-
 body {
   background-image: url("../assets/pink_rice.png");
-  overflow-x: hidden;
 }
 
 /* Grid Area */
 .contenedor {
+  padding: 0;
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr 2fr 1fr;

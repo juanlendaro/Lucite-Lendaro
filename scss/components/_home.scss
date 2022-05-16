@@ -1,48 +1,44 @@
-$headings: (
-  h1: 5rem,
-  h2: 4rem,
-  h3: 5rem,
-  h4: 6rem,
-);
 
-h1 {
-  font-size: map-get($headings, h1);
-}
-
-
-p {
-  text-align: center;
-}
 
 .mainindex {
   grid-area: main;
-  
+  .carousel {
+    margin: auto;
+    width: 80%;
+    .carousel-item {
+      overflow: hidden;
+      &:before {
+        content: "";
+        background-image: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(0, 0, 0, 0.6)
+        );
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
 }
 
-.carousel {
-  margin: auto;
-  width: 80%;
-  .carousel-item {
-    overflow: hidden;
-    &:before {
-      content: "";
-      background-image: linear-gradient(
-        to bottom,
-        transparent,
-        rgba(0, 0, 0, 0.6)
-      );
-      display: block;
-      position: absolute;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
+
     img {
       object-fit: cover;
       object-position: center;
       height: 70vh;
       overflow: hidden;
     }
+  }
+}
+
+.video-main {
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel {
+    width: 100%;
   }
 }
