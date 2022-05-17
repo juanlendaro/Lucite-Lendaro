@@ -41,7 +41,7 @@
   justify-content: center;
   font-family:'Roboto Slab', serif;
   padding: 4em;
-  font-size: clamp(0.55rem, 1vw, 2rem);
+  font-size: clamp(0.59rem, 1vw, 2rem);
   height: 21em;
   text-align: center;
   box-shadow: 0.3125em 0.3125em 0.9375em rgba($boton, .5);
@@ -60,12 +60,13 @@
   
    
   .mi-nombre {
-    font-size: clamp(0.7rem, 1.5vw, 2rem);
+    font-size: clamp(0.6rem, 1.5vw, 2rem);
     letter-spacing: 0.3em;
+    
   }
      .lucila {
       color: $boton;
-      font-size: clamp(0.8rem, 1.5vw, 2rem);
+      font-size: clamp(0.6rem, 1.5vw, 2rem);
      letter-spacing: 0.3em;
      }
 
@@ -94,6 +95,10 @@
 
   .introindex {
     width: 90%;
+
+    .mi-nombre {
+      margin-top: -2em;
+    }
     
   }
 

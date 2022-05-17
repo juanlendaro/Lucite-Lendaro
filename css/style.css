@@ -269,7 +269,7 @@ section .section-title {
   justify-content: center;
   font-family: "Roboto Slab", serif;
   padding: 4em;
-  font-size: clamp(0.55rem, 1vw, 2rem);
+  font-size: clamp(0.59rem, 1vw, 2rem);
   height: 21em;
   text-align: center;
   box-shadow: 0.3125em 0.3125em 0.9375em rgba(238, 131, 131, 0.5);
@@ -282,12 +282,12 @@ section .section-title {
   box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
 }
 .introindex .mi-nombre {
-  font-size: clamp(0.7rem, 1.5vw, 2rem);
+  font-size: clamp(0.6rem, 1.5vw, 2rem);
   letter-spacing: 0.3em;
 }
 .introindex .lucila {
   color: #ee8383;
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  font-size: clamp(0.6rem, 1.5vw, 2rem);
   letter-spacing: 0.3em;
 }
 .introindex .foto-luli {
@@ -305,6 +305,9 @@ section .section-title {
 
   .introindex {
     width: 90%;
+  }
+  .introindex .mi-nombre {
+    margin-top: -2em;
   }
 
   .video-main {
