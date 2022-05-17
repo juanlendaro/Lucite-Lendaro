@@ -39,7 +39,7 @@
 .introindex {
   display: flex;
   font-family:'Roboto Slab', serif;
-  padding-top: 4em;
+  padding: 4em;
   font-size: clamp(0.5rem, 1vw, 1.5rem);
   height: 18em;
   text-align: center;
@@ -47,6 +47,7 @@
   border-radius: 1em;
   background-color: #F5F5F5;
   margin: 2em;
+  max-width: 90%;
   
   &:hover {
     box-shadow: 0 0 0.500em 0 rgba(0, 0, 0, 0.5);
@@ -67,6 +68,7 @@
   .foto-luli {
     min-width: 12em;
     min-height: 11em;
+    
     
   }
 }

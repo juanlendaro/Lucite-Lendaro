@@ -26,7 +26,7 @@
   align-items: flex-start;
   margin-top: 4em;
   justify-content: center;
- 
+  
 }
 
 
@@ -37,6 +37,8 @@
   background-image: url(../assets/sakura.png);
   animation: menufondo 3s infinite alternate;
   width: 22em;
+  border-radius: 1em;
+    
   
     
   .lista-menu {
@@ -46,6 +48,7 @@
     background-size: 2.5rem;
     background-repeat: no-repeat;
     margin-left: 1em;
+    margin-bottom: 0.5em;
     
     
 
