@@ -264,9 +264,30 @@ section .section-title {
 .introindex {
   display: flex;
   font-family: "Roboto Slab", serif;
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
-  height: 15em;
+  padding: 4em;
+  font-size: clamp(0.4rem, 1vw, 1.5rem);
+  height: 18em;
   text-align: center;
+  box-shadow: 0.3125em 0.3125em 0.9375em rgba(238, 131, 131, 0.5);
+  border-radius: 1em;
+  background-color: #F5F5F5;
+  margin: 2em;
+}
+.introindex:hover {
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
+}
+.introindex .mi-nombre {
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  letter-spacing: 0.3em;
+}
+.introindex .lucila {
+  color: #ee8383;
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  letter-spacing: 0.3em;
+}
+.introindex .foto-luli {
+  min-width: 12em;
+  min-height: 11em;
 }
 
 .video-main {
@@ -276,6 +297,23 @@ section .section-title {
 @media only screen and (max-width: 600px) {
   .carousel {
     width: 100%;
+  }
+
+  .video-main {
+    margin-top: 1em;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 #patrones-explicación {
