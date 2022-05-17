@@ -7,11 +7,13 @@
   position: relative;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  width: 100%;
+  
+  
   
   
   .logo {
     height: 35vh;
+    
    
     
   }
@@ -27,6 +29,8 @@
   align-items: flex-start;
   margin-top: 4em;
   justify-content: center;
+  min-width: 100vw;
+   
   
 }
 
@@ -52,9 +56,6 @@
     margin-bottom: 0.5em;
     
     
-
-
-
     a {
        color: #fcf5e5;
       text-decoration: none;

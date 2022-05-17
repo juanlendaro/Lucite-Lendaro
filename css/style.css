@@ -46,7 +46,6 @@
   position: relative;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  width: 100%;
 }
 .nav .logo {
   height: 35vh;
@@ -61,6 +60,7 @@
   align-items: flex-start;
   margin-top: 4em;
   justify-content: center;
+  min-width: 100vw;
 }
 
 .menu {
@@ -290,7 +290,7 @@ section .section-title {
   letter-spacing: 0.3em;
 }
 .introindex .foto-luli {
-  min-width: 12em;
+  min-width: 13em;
   min-height: 11em;
   margin-left: 2em;
 }
@@ -362,7 +362,6 @@ section .section-title {
   background-attachment: fixed;
   background-size: cover;
   box-shadow: -3px 1px 5px 0px rgba(0, 0, 0, 0.7);
-  width: 100%;
 }
 
 * {
