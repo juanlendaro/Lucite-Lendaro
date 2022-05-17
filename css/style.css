@@ -264,7 +264,7 @@ section .section-title {
 .introindex {
   display: flex;
   font-family: "Roboto Slab", serif;
-  padding: 4em;
+  padding-top: 4em;
   font-size: clamp(0.5rem, 1vw, 1.5rem);
   height: 18em;
   text-align: center;
