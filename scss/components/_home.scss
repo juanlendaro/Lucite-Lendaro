@@ -38,6 +38,7 @@
 
 .introindex {
   display: flex;
+  justify-content: center;
   font-family:'Roboto Slab', serif;
   padding: 4em;
   font-size: clamp(0.55rem, 1vw, 2rem);
@@ -47,7 +48,9 @@
   border-radius: 1em;
   background-color: #F5F5F5;
   margin: 2em;
-  max-width: 90%;
+  width: 50vw;
+  
+  
   
   
   &:hover {
@@ -67,9 +70,9 @@
      }
 
   .foto-luli {
-    min-width: 13em;
-    min-height: 11em;
-    margin-left: 2em;
+        
+    margin-left: 1em;
+    
     
     
   }
@@ -88,6 +91,12 @@
   .carousel {
     width: 100%;
   }
+
+  .introindex {
+    width: 90%;
+    
+  }
+
   .video-main {
     margin-top: 1em;
     width: 100%;

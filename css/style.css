@@ -266,6 +266,7 @@ section .section-title {
 
 .introindex {
   display: flex;
+  justify-content: center;
   font-family: "Roboto Slab", serif;
   padding: 4em;
   font-size: clamp(0.55rem, 1vw, 2rem);
@@ -275,7 +276,7 @@ section .section-title {
   border-radius: 1em;
   background-color: #F5F5F5;
   margin: 2em;
-  max-width: 90%;
+  width: 50vw;
 }
 .introindex:hover {
   box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
@@ -290,9 +291,7 @@ section .section-title {
   letter-spacing: 0.3em;
 }
 .introindex .foto-luli {
-  min-width: 13em;
-  min-height: 11em;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 .video-main {
@@ -302,6 +301,10 @@ section .section-title {
 @media only screen and (max-width: 600px) {
   .carousel {
     width: 100%;
+  }
+
+  .introindex {
+    width: 90%;
   }
 
   .video-main {
