@@ -304,7 +304,7 @@ section .section-title {
   }
 
   .introindex {
-    width: 90%;
+    width: 80vw;
   }
   .introindex .mi-nombre {
     margin-top: -2em;
