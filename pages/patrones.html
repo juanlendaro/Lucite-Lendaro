@@ -18,22 +18,31 @@
 </head>
 
 <body>
-  <div class="contenedor">
+  <div class="contenedor container-fluid">
     <header class="header">
+      <h1>Patrones</h1>
     </header>
-    <nav class="nav" class="container">
+    <nav class="nav navbar navbar-expand-md navbar-light bg-light container-fluid">
       <a href="../index.html"><img src="../assets/Logo.png" alt="Lucite" class="logo"></a>
-      <ul class="menu">Menú
-        <li class="lista-menu"><a href="../index.html" class="css-button-arrow--rose">Home</a></li>
-        <li class="lista-menu"><a href="../pages/amigurumis.html" class="css-button-arrow--rose--2"> Amigurumis</a></li>
-        <li class="lista-menu"><a href="../pages/indumentaria.html" class="css-button-arrow--rose--3"> Indumentaria</a>
-        </li>
-        <li class="lista-menu"><a href="../pages/patrones.html" class="css-button-arrow--rose--4"> Patrones</a></li>
-        <li class="lista-menu"><a href="../pages/contacto.html" class="css-button-arrow--rose--5"> Contacto</a></li>
-      </ul>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menunav"
+        aria-controls="menunav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menunav" class="collapse navbar-collapse w-100 h-75">
+        <ul class="menu navbar-nav  d-flex flex-md-column text-center mx-auto">
+          <li class="lista-menu"><a href="../index.html" class="css-button-arrow--rose">Home</a></li>
+          <li class="lista-menu"><a href="../pages/amigurumis.html" class="css-button-arrow--rose--2"> Amigurumis</a>
+          </li>
+          <li class="lista-menu"><a href="../pages/indumentaria.html" class="css-button-arrow--rose--3">
+              Indumentaria</a>
+          </li>
+          <li class="lista-menu"><a href="../pages/patrones.html" class="css-button-arrow--rose--4"> Patrones</a></li>
+          <li class="lista-menu"><a href="../pages/contacto.html" class="css-button-arrow--rose--5"> Contacto</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="main">
-      <h1>Patrones</h1>
+
 
 
 
@@ -49,7 +58,6 @@
                 <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
               </ul>
             </div>

@@ -41,7 +41,7 @@
   justify-content: center;
   font-family:'Roboto Slab', serif;
   padding: 4em;
-  font-size: clamp(0.59rem, 1vw, 2rem);
+  font-size: clamp(0.8rem, 1vw, 2rem);
   height: 21em;
   text-align: center;
   box-shadow: 0.3125em 0.3125em 0.9375em rgba($boton, .5);
@@ -58,17 +58,22 @@
     
   } 
   
-   
+  
   .mi-nombre {
-    font-size: clamp(0.6rem, 1.5vw, 2rem);
+    font-size: clamp(0.9rem, 1.5vw, 2rem);
     letter-spacing: 0.3em;
     
   }
      .lucila {
       color: $boton;
-      font-size: clamp(0.6rem, 1.5vw, 2rem);
+      font-size: clamp(0.9rem, 1.5vw, 2rem);
      letter-spacing: 0.3em;
      }
+
+     p {
+       margin-top: 2em;
+     }
+    
 
   .foto-luli {
         
@@ -88,35 +93,40 @@
 
 
 
-@media only screen and (max-width: 600px) {
-  .carousel {
-    width: 100%;
-  }
+@media only screen and (max-width: 958px) {
+  
 
+  
   .introindex {
-    width: 80vw;
+    width: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+      
     
 
-    .mi-nombre {
-      margin-top: -2em;
+
+    .texto {
+      margin-top: -2.7em;
+
+      p{
+        margin-top:1em;
+      }
+
+     
+    }
+   
+    .foto-luli {
+
+      width: 10em;
+      height: 10em;
+      margin: auto;
+      margin-top: -0.5em;
+
     }
     
   }
 
-  .video-main {
-    margin-top: 1em;
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-  }
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+  
+ 
 
 }

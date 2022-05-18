@@ -1,0 +1,56 @@
+.card-sus {
+    display: flex;
+    justify-content: center;
+    font-family:'Roboto Slab', serif;
+    padding: 4em;
+    font-size: clamp(1rem, 1vw, 2rem);
+    height: 21em;
+    text-align: center;
+    box-shadow: 0.3125em 0.3125em 0.9375em rgba($boton, .5);
+    border-radius: 1em;
+    background-color: #F5F5F5;
+    margin: 2em auto;
+    width: 40vw;
+    
+    
+    
+    
+    
+    &:hover {
+      box-shadow: 0 0 0.500em 0 rgba(0, 0, 0, 0.5);
+      
+    } 
+    
+     
+    .suscribite {
+      font-size: clamp(1.2rem, 1.5vw, 2rem);
+      letter-spacing: 0.3em;
+      padding: 0.5em;
+            
+    }
+
+           
+  
+    .cactus{
+      margin-right: 1em;
+      
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+      
+    .card-sus {
+      width: 96vw;
+      
+        .suscribite {
+            padding: 0;
+        }
+      
+    }
+  
+    
+   
+  
+  }
