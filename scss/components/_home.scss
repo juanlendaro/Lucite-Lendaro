@@ -47,7 +47,7 @@
   box-shadow: 0.3125em 0.3125em 0.9375em rgba($boton, .5);
   border-radius: 1em;
   background-color: #F5F5F5;
-  margin: 2em auto;
+  margin: 8em auto;
   width: 40vw;
   
   
@@ -91,6 +91,10 @@
   
 }
 
+.footer-index {
+  margin-top: 4em;
+}
+
 
 
 @media only screen and (max-width: 958px) {
@@ -101,6 +105,7 @@
     width: auto;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 2em auto;
       
     
 
