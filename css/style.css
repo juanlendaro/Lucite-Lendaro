@@ -276,7 +276,7 @@ section .section-title {
   text-align: center;
   box-shadow: 0.3125em 0.3125em 0.9375em rgba(238, 131, 131, 0.5);
   border-radius: 1em;
-  background-color: #F5F5F5;
+  background-color: rgba(245, 245, 245, 0.7960784314);
   margin: 8em auto;
   width: 40vw;
 }
@@ -304,7 +304,7 @@ section .section-title {
 }
 
 .footer-index {
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
 @media only screen and (max-width: 958px) {
