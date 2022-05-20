@@ -1,53 +1,48 @@
-// .footer {
-//   grid-area: footer;
-//   display: flex;
-//   position: relative;
-//   flex-direction: column;
-//   margin-top: auto;
-// }
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 section {
   padding: 60px 0;
-}
 
-section .section-title {
-  text-align: center;
-  @include primario;
-  margin-bottom: 50px;
-  text-transform: uppercase;
+  .section-title {
+    text-align: center;
+    @include primario;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
 }
 
 #footer {
   @include primario;
+
+  h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+
+  li {
+    padding: 3px 0;
+  }
+  
+  i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+
 }
 
-#footer h5 {
-  padding-left: 10px;
-  border-left: 3px solid #eeeeee;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-#footer a {
-  color: #ffffff;
-  text-decoration: none !important;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-#footer ul.social li {
-  padding: 3px 0;
-}
-
-#footer ul.social li a i {
-  margin-right: 5px;
-  font-size: 25px;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
 
 #footer ul.social li:hover a i {
   font-size: 30px;
