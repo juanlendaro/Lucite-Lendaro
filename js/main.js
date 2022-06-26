@@ -1,4 +1,4 @@
-const carritoDeCompras = []
+let carritoDeCompras = []
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 
@@ -30,13 +30,13 @@ function mostrarCarrito(productoAgregar) {
     const btnEliminar = document.getElementById(`eliminar${productoAgregar.id}`);
     btnEliminar.addEventListener("click", () => {
         btnEliminar.parentElement.remove();
-        carritoDeCompras = carritoDeCompras.filter(elemento => elemento, id !== productoAgregar.id);
-        actualizarCarrito;
+        carritoDeCompras = carritoDeCompras.filter(elemento => elemento.id !== productoAgregar.id);
+        actualizarCarrito();
     })
 }
 
 function actualizarCarrito() {
-    contadorCarrito.innerText = carritoDeCompras.lenght;
+    contadorCarrito.innerText = carritoDeCompras.length;
     precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0);
 }
 
