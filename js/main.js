@@ -13,7 +13,20 @@ function agregarAlCarrito(id) {
     carritoDeCompras.push(productoAgregar);
     mostrarCarrito(productoAgregar);
     actualizarCarrito();
+    guardarCarrito();
 
+}
+
+function guardarCarrito() {
+    if (carritoDeCompras.length > 0)
+        localStorage.setItem("carritoDeCompras", JSON.stringify(carritoDeCompras));
+}
+
+function recuperarCarrito() {
+    if (carrito = JSON.parse(localStorage.getItem("carritoDeCompras")))
+        carrito.forEach(amigurumi => {
+            carritoDeCompras.push(amigurumi)
+        })
 }
 
 function mostrarCarrito(productoAgregar) {
@@ -32,6 +45,7 @@ function mostrarCarrito(productoAgregar) {
         btnEliminar.parentElement.remove();
         carritoDeCompras = carritoDeCompras.filter(elemento => elemento.id !== productoAgregar.id);
         actualizarCarrito();
+        guardarCarrito();
     })
 }
 
