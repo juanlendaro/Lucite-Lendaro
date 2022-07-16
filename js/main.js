@@ -1,4 +1,4 @@
-let carritoDeCompras = []
+let carritoDeCompras = JSON.parse(localStorage.getItem("carritoDeCompras")) ?? []
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 
@@ -14,7 +14,6 @@ function agregarAlCarrito(id) {
     mostrarCarrito(productoAgregar);
     actualizarCarrito();
     guardarCarrito();
-
 }
 
 function guardarCarrito() {
@@ -28,6 +27,8 @@ function recuperarCarrito() {
             carritoDeCompras.push(amigurumi)
         })
 }
+
+actualizarCarrito();
 
 function mostrarCarrito(productoAgregar) {
     let div = document.createElement("div");
@@ -47,11 +48,28 @@ function mostrarCarrito(productoAgregar) {
         actualizarCarrito();
         guardarCarrito();
     })
+
 }
 
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.length;
     precioTotal.innerHTML = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0);
+}
+
+const toast = () => {
+    Toastify({
+
+        text: "Amigurumi agregado al carrito :)",
+
+        style: {
+            background: "linear-gradient(to right, #EE8383, #fb7676)",
+        },
+
+        duration: 3000
+
+
+    }).showToast();
+
 }
 
 function mostrarStock1(stock1) {
@@ -76,6 +94,7 @@ function mostrarStock1(stock1) {
 
         btnAgregar.addEventListener("click", () => {
             agregarAlCarrito(amigurumi.id);
+            toast();
 
         })
     })
@@ -103,6 +122,7 @@ function mostrarStock2(stock2) {
 
         btnAgregar.addEventListener("click", () => {
             agregarAlCarrito(amigurumi.id);
+            toast();
         })
     })
 }
