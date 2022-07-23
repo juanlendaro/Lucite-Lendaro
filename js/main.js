@@ -131,3 +131,10 @@ function mostrarStock2(stock2) {
 
 mostrarStock1(stock1)
 mostrarStock2(stock2)
+
+const URL = "../js/amigurumis.json"
+
+fetch(URL)
+    .then(res => res.json())
+    .then(data => { console.log(data) })
+    .catch(console.log("No se encontró el stock, por favor intenta más tarde"))
