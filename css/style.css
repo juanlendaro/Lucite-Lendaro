@@ -411,6 +411,11 @@ section .section-title {
   filter: brightness(118%);
 }
 
+.gif {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 780px) {
   .card {
     margin: 1em 0;

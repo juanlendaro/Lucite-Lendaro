@@ -132,9 +132,28 @@ function mostrarStock2(stock2) {
 mostrarStock1(stock1)
 mostrarStock2(stock2)
 
-const URL = "../js/amigurumis.json"
+let apikey = "ZKzO0MJoscD1nXV6GB5rV8r8kbqS8ODk"
 
-fetch(URL)
-    .then(res => res.json())
-    .then(data => { console.log(data) })
-    .catch(console.log("No se encontró el stock, por favor intenta más tarde"))
+document.addEventListener("DOMContentLoaded", init);
+function init() {
+
+    const URL = `https://api.giphy.com/v1/gifs/random?api_key=${apikey}&tag=knitting&limit=1&q=`
+
+    fetch(URL)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            console.log(data.meta);
+            let fig = document.createElement("fig");
+            let img = document.createElement("img");
+            img.src = data.data.images.downsized.url;
+            img.alt = data.data.title;
+            fig.appendChild(img);
+            fig.className = ("gif")
+            let gif = document.querySelector(".gif");
+            gif.insertAdjacentElement("afterbegin", fig);
+        })
+        .catch(console.log("Acá debería mostrarse un GIF muy bonito, intenta más tarde"))
+}
+
+
