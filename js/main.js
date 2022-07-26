@@ -2,8 +2,8 @@ let carritoDeCompras = JSON.parse(localStorage.getItem("carritoDeCompras")) ?? [
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 
-const botonTerminar = document.getElementById("terminar");
-const finCompra = document.getElementById("fin-compra");
+// const botonTerminar = document.getElementById("terminar");
+// const finCompra = document.getElementById("fin-compra");
 
 const contadorCarrito = document.getElementById("contadorCarrito");
 const precioTotal = document.getElementById("precioTotal");
