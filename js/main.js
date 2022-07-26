@@ -2,9 +2,6 @@ let carritoDeCompras = JSON.parse(localStorage.getItem("carritoDeCompras")) ?? [
 
 const contenedorCarrito = document.getElementById("carrito-contenedor");
 
-// const botonTerminar = document.getElementById("terminar");
-// const finCompra = document.getElementById("fin-compra");
-
 const contadorCarrito = document.getElementById("contadorCarrito");
 const precioTotal = document.getElementById("precioTotal");
 
@@ -21,14 +18,6 @@ function guardarCarrito() {
         localStorage.setItem("carritoDeCompras", JSON.stringify(carritoDeCompras));
 }
 
-function recuperarCarrito() {
-    if (carrito = JSON.parse(localStorage.getItem("carritoDeCompras")))
-        carrito.forEach(amigurumi => {
-            carritoDeCompras.push(amigurumi)
-        })
-}
-
-actualizarCarrito();
 
 
 
